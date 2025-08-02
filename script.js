@@ -6,12 +6,12 @@ codes.forEach((code,idx)=>{
 		const keyPressed = e.key;
 		if(keyPressed <= "9" && keyPressed >= "0"){
 			if(codes.length - 1 > idx){
-				setTimeout(()=>codes[idx+1].focus(),10);
+				setTimeout(()=>codes[idx+1].focus(),100);
 			}
 		}
 		else if(keyPressed === "Backspace"){
 				if(idx > 0){
-					setTimeout(()=>codes[idx-1].focus(),10);
+					setTimeout(()=>codes[idx-1].focus(),100);
 				}
 		}
 	})
