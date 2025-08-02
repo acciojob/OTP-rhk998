@@ -16,3 +16,10 @@ codes.forEach((code,idx)=>{
 		}
 	})
 })
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const firstCodeInput = document.getElementById('code-1');
+    if (firstCodeInput) {
+        firstCodeInput.focus();
+    }
+});
